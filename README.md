@@ -90,10 +90,10 @@ useLegacy is only useful for GIFs with many frames, as it will take long (depend
 - Set useLegacy as true in the code
   ![](https://github.com/user-attachments/assets/05257a7e-e2cf-43f4-80de-589bde01c95d)
 
-- Comment the variable with 0 and uncomment the one where it says legacy. put the amount of frames the GIF has there
+- Comment the variable with 0 and uncomment the one where it says legacy. put the amount of frames the GIF has there\
  ![](https://github.com/user-attachments/assets/acbb5444-a733-4911-8dea-205b581ff79b)
 
-After that frame counting will be instantaneous (as it doesnt need to go through the files to scan(, its unreliable if you hotswap GIFs through your SD card, and its only reccomended for large GIFs that will take a lot of time to count.
+After that frame counting will be instantaneous (as it doesnt need to go through the files to scan) , its unreliable if you hotswap GIFs through your SD card, and its only reccomended for large GIFs that will take a lot of time to count.
 
 ### Slight optimizations for large GIFs
 
