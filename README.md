@@ -42,7 +42,7 @@ resetAfterPlayback = SLIGHTLY better perfomance but at the end of the GIF a whit
 useLegacy =  use legacy frame counting mode (defined in code)
 ```
 
-useLegacy will have more docummentation at PLACEHOLDER_LINK.
+useLegacy will have more docummentation [here](https://github.com/NotHavocc/animplayer32?tab=readme-ov-file#uselegacy)
 
 > [!IMPORTANT]  
 > Wire the display and SD card module correctly, you can change the pins if you want to for the SD. The TFT has your config in the User_Setup.h file of the [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) library. Dont forget to set up TFT_eSPI first.
