@@ -8,6 +8,9 @@
 
 A (sorta) GIF player for ESP32/arduino
 
+## Showcase
+![ezgif-6-591bf0e6e6-ezgif com-optimize](https://github.com/user-attachments/assets/fa6c964d-8322-4861-814a-60dc5a2bffa7)
+
 ## Hardware Dependencies
 For this project you dont need really much stuff.
 Stuff you need: 
@@ -24,7 +27,7 @@ For the code to upload and work properly you will need some extra libraries:
 > FS and SPIFFS are included in the ESP32/ESP8266 core, if you dont have one of these boards you might have to install them seperately.
 
 I have developed a software for automatically turning GIFS to frames used by this program. You will need it unless you will do it manually.
-PLACEHOLDER_LINK
+[animplayer32converter](https://github.com/NotHavocc/animplayer32converter)
 
 ## Setup
 
@@ -54,7 +57,7 @@ I have made a program for automatizing that, as mentioned. It is really simple, 
 
 - Download the program
 
- Download it at PLACEHOLDER_LINK.
+ Download it [here](https://github.com/NotHavocc/animplayer32converter).
 
 - Input the path of your GIF, then press Enter.
 ![path input](https://github.com/user-attachments/assets/c773739f-cb5c-4771-9278-9881a38867d3)
@@ -78,6 +81,29 @@ I have made a program for automatizing that, as mentioned. It is really simple, 
 > [!WARNING]  
 > GIFs have alpha transparency, just like PNGs. So some GIF frames can be corrupted after conversion, if it happens try again with a similar GIF.
 
+## Other
+
+### useLegacy
+
+useLegacy is only useful for GIFs with many frames, as it will take long (depending on SD card and MCU speed) to count them all to make the program know how much frames to play.
+
+- Set useLegacy as true in the code
+  ![](https://github.com/user-attachments/assets/05257a7e-e2cf-43f4-80de-589bde01c95d)
+
+- Comment the variable with 0 and uncomment the one where it says legacy. put the amount of frames the GIF has there
+ ![](https://github.com/user-attachments/assets/acbb5444-a733-4911-8dea-205b581ff79b)
+
+After that frame counting will be instantaneous (as it doesnt need to go through the files to scan(, its unreliable if you hotswap GIFs through your SD card, and its only reccomended for large GIFs that will take a lot of time to count.
+
+### Slight optimizations for large GIFs
+
+You can put these settings as true to get slight perfomance increase.
+
+![image](https://github.com/user-attachments/assets/7a271b5a-05d3-4316-b148-5ed13c703811)
+
+> [!NOTE]
+> Its only reliable for large GIFs, once again. But resetAfterPlayback can be a bit useful for lighter GIFs.
+
 ## Perfomance
 These are my tests that I have tested on specific hardware. Any little thing can impact perfomance, even the GIF used. If you want, you can post your own perfomance results at the issues section and tag it as "Perfomance test", dont forget to write your board, SD card slot model, TFT driver, SD card itself, SPI speeds used and a video showing the FPS.
 - My tests:
@@ -86,6 +112,8 @@ These are my tests that I have tested on specific hardware. Any little thing can
   Min: 13-ish FPS\
 - Community tests:
   coming soon, hopefully
+
+
   
 
 
