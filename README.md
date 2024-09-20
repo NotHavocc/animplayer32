@@ -1,8 +1,8 @@
 # AnimPlayer32 <img src="https://github.com/user-attachments/assets/69113c48-5157-4f38-9c8d-da646bc1642a" width="150" align="left">
 
 ![GitHub issues](https://img.shields.io/github/issues/NotHavocc/animplayer32)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/NotHavocc/animplayer32/total)
-![GitHub License](https://img.shields.io/github/license/NotHavocc/animplayer32)
+![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nothavocc/animplayer32/total)
+![GitHub License](https://img.shields.io/github/license/nothavocc/animplayer32)
 ![GitHub Release](https://img.shields.io/github/v/release/NotHavocc/animplayer32)
 ![Static Badge](https://img.shields.io/badge/open_source-with_%3C3-blue)
 
