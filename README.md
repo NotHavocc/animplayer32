@@ -19,6 +19,9 @@ Stuff you need:
 - SD card slot (can be internal and external module)
 - Wires (obviously, unless...)
 
+> [!IMPORTANT]  
+> Some other arduino compatible boards dont work with some libraries in this code, thus it will need a port.
+
 ## Software Dependencies
 For the code to upload and work properly you will need some extra libraries:
 - [TFT_eSPI](https://github.com/Bodmer/TFT_eSPI) , FS, [TJpg_Decoder](https://github.com/Bodmer/TJpg_Decoder), SD, SPIFFS
@@ -35,6 +38,7 @@ I have developed a software for automatically turning GIFS to frames used by thi
 At the beginning of the code in the .ino file there is a special section where you can toggle different debug/optimisation settings. As of now they are:
 ```
 SETTINGS FOR DEBUGGING AND GENERAL OPTIMIZATION
+preloadCount = amount of frames to preload
 showFPS = show FPS counter at the top left of the screen
 showFramePassed =  show what GIF frame its currently on
 reset10thFrame = not very good optimisation method but im keeping it here, resets display (white screen) every 10th frame
@@ -108,8 +112,12 @@ You can put these settings as true to get slight perfomance increase.
 These are my tests that I have tested on specific hardware. Any little thing can impact perfomance, even the GIF used. If you want, you can post your own perfomance results at the issues section and tag it as "Perfomance test", dont forget to write your board, SD card slot model, TFT driver, SD card itself, SPI speeds used and a video showing the FPS.
 - My tests:
   ESP32, ST7735 display, random SD card slot, 128mb SD card and 80mhz SPI speed (not sure if some of that has gone to waste)\
+  - v1.0.0\
   Max: 15-ish FPS\
-  Min: 13-ish FPS\
+  Min: 13-ish FPS
+  - v1.1.0\
+  Max: 21-ish FPS\
+  Min: 20-ish FPS
 - Community tests:
   coming soon, hopefully
 
