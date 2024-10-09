@@ -1,7 +1,7 @@
 # AnimPlayer32 <img src="https://github.com/user-attachments/assets/69113c48-5157-4f38-9c8d-da646bc1642a" width="150" align="left">
 
 ![GitHub issues](https://img.shields.io/github/issues/NotHavocc/animplayer32)
-![GitHub Downloads (all assets, all releases)](https://img.shields.io/github/downloads/nothavocc/animplayer32/total)
+![GitHub all releases](https://img.shields.io/github/downloads/NotHavocc/animplayer32/total)
 ![GitHub License](https://img.shields.io/github/license/nothavocc/animplayer32)
 ![GitHub Release](https://img.shields.io/github/v/release/NotHavocc/animplayer32)
 ![Static Badge](https://img.shields.io/badge/open_source-with_%3C3-blue)
@@ -35,6 +35,7 @@ I have developed a software for automatically turning GIFS to frames used by thi
 ## Setup
 
 ### Before flash
+If using PlatformIO, go to platformio.ini and change the TFT_eSPI display settings.
 At the beginning of the code in the .ino file there is a special section where you can toggle different debug/optimisation settings. As of now they are:
 ```
 SETTINGS FOR DEBUGGING AND GENERAL OPTIMIZATION
@@ -53,7 +54,7 @@ useLegacy will have more docummentation [here](https://github.com/NotHavocc/anim
 
 ### Flashing
 
-After fiddling with the settings, it is time to flash. just use your ideal IDE to flash the code onto your board.
+After fiddling with the settings, it is time to flash. just use your ideal IDE to flash the code onto your board
 
 ### Creating a GIF for AnimPlayer32
 
